@@ -107,6 +107,15 @@ python -m examples.benchmark        # speed/recall of the 3 algorithms at larger
 python -m examples.rag_demo         # full RAG with Ollama
 ```
 
+### Live demo (Render)
+
+The project deploys to [Render](https://render.com) using `render.yaml`
+(New → Blueprint → pick this repo). The live demo supports **vector search only**:
+search, benchmark and the HNSW graph view. Document upload and question answering
+need Ollama, which runs locally, so they show "Ollama offline" online.
+The free plan sleeps when idle (the first request can take about a minute), and
+vectors added online are lost on restart.
+
 ## 7. Example usage (Python)
 
 ```python
